@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700|Quicksand:300,400,500,700|Shadows+Into+Light+Two");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg"); }
+
+@font-face {
+  font-family: "MyriadProBold";
+  font-weight: normal;
+  src: url("./font/MYRIADPRO-BOLD.OTF"); }
+
+@font-face {
+  font-family: "MyriadProLight";
+  font-weight: normal;
+  src: url("./font/MyriadPro-Light.otf"); }
+
+@font-face {
+  font-family: "MyriadProRegular";
+  font-weight: normal;
+  src: url("./font/MYRIADPRO-REGULAR.OTF"); }
+
+@font-face {
+  font-family: "MyriadProSemiBold";
+  font-weight: normal;
+  src: url("./font/MYRIADPRO-SEMIBOLD.OTF"); }
+
+:root {
+  --primary1: #15172B;
+  --primary2: #262A41;
+  --customblue: #0026FF;
+  --custompink: #FF3250;
+  --customeyellow: #FFBB00;
+  --customgreen: #07E642;
+  --custompurple: #894FC6;
+  --customdarkblue: #121432;
+  --white: #ffffff;
+  --customgrey: #707070;
+  --customgreen1: #15D4A1; }
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+body {
+  position: relative;
+  font-family: "MyriadProRegular";
+  background-color: var(--primary1); }
+  body::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none; }
+
+.middle, .mcontainer #body #left .search img, .mcontainer #body #left .project .projects .a-project div.box-color span, .mcontainer #body #right .tasks ul.tasks-list li .info .left label [type=checkbox]:checked + span:before,
+.mcontainer #body #right .upcoming ul.tasks-list li .info .left label [type=checkbox]:checked + span:before {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1; }
+
+img {
+  user-select: none; }
+
+.mcontainer #body {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "Left Right";
+  padding: 16px; }
+  .mcontainer #body #left {
+    grid-area: Left;
+    padding: 15%;
+    position: relative; }
+    .mcontainer #body #left .hamburger {
+      position: absolute;
+      top: 0%;
+      left: 2%;
+      cursor: pointer; }
+    .mcontainer #body #left .profile {
+      margin-top: 5px; }
+      .mcontainer #body #left .profile h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 34px;
+        color: var(--white);
+        font-weight: 500;
+        text-transform: capitalize; }
+      .mcontainer #body #left .profile h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        color: var(--customgrey);
+        font-weight: 300; }
+    .mcontainer #body #left .search {
+      border: unset;
+      border-radius: 14px;
+      padding: 17px 25px;
+      padding-left: 55px;
+      margin-top: 39px;
+      position: relative;
+      background-color: #70707050;
+      height: 53px;
+      margin-bottom: 35px;
+      width: 90%; }
+      .mcontainer #body #left .search img {
+        opacity: 1;
+        left: 25px;
+        cursor: pointer; }
+      .mcontainer #body #left .search input {
+        border: unset;
+        padding: 0.2em;
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        caret-color: var(--white); }
+        .mcontainer #body #left .search input::placeholder {
+          background-color: unset;
+          color: var(--customgrey);
+          font-family: 'Open Sans', sans-serif;
+          font-size: 14px; }
+    .mcontainer #body #left .project {
+      margin-bottom: 70px; }
+      .mcontainer #body #left .project h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 19px;
+        color: var(--white) !important; }
+        .mcontainer #body #left .project h3 span {
+          font-size: 14px;
+          color: var(--customgrey); }
+      .mcontainer #body #left .project .projects {
+        margin-top: 27px;
+        display: grid;
+        grid-template-columns: repeat(3, 112px);
+        grid-auto-flow: dense; }
+        .mcontainer #body #left .project .projects .a-project {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          cursor: pointer;
+          border-radius: 1em;
+          background-color: transparent;
+          margin-bottom: 1em;
+          padding: 0.5em; }
+          .mcontainer #body #left .project .projects .a-project span {
+            font-family: "MyriadProRegular";
+            font-size: 17px;
+            color: var(--white);
+            font-size: 900; }
+          .mcontainer #body #left .project .projects .a-project h6 {
+            margin-top: 16px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: var(--white); }
+          .mcontainer #body #left .project .projects .a-project div.box-color {
+            border-radius: 1em;
+            margin-bottom: 1px;
+            overflow: hidden;
+            position: relative; }
+            .mcontainer #body #left .project .projects .a-project div.box-color span {
+              opacity: 1; }
+            .mcontainer #body #left .project .projects .a-project div.box-color img {
+              width: 100%;
+              height: 100%; }
+            .mcontainer #body #left .project .projects .a-project div.box-color:hover {
+              border: 4px solid var(--custompink);
+              transition: border 400ms eas; }
+          .mcontainer #body #left .project .projects .a-project .customwidth, .mcontainer #body #left .project .projects .a-project:nth-child(1) div.box-color, .mcontainer #body #left .project .projects .a-project:nth-child(2) div.box-color, .mcontainer #body #left .project .projects .a-project:nth-child(3) div.box-color, .mcontainer #body #left .project .projects .a-project:nth-child(4) div.box-color, .mcontainer #body #left .project .projects .a-project:nth-child(5) div.box-color, .mcontainer #body #left .project .projects .a-project:nth-child(6) div.box-color {
+            width: 100px;
+            height: 94px !important; }
+          .mcontainer #body #left .project .projects .a-project:nth-child(1) div.box-color {
+            background-color: var(--customblue); }
+          .mcontainer #body #left .project .projects .a-project:nth-child(2) div.box-color {
+            background-color: var(--custompink); }
+          .mcontainer #body #left .project .projects .a-project:nth-child(3) div.box-color {
+            background-color: var(--customeyellow); }
+          .mcontainer #body #left .project .projects .a-project:nth-child(4) div.box-color {
+            background-color: var(--customgreen); }
+          .mcontainer #body #left .project .projects .a-project:nth-child(5) div.box-color {
+            background-color: var(--custompurple); }
+          .mcontainer #body #left .project .projects .a-project:nth-child(6) div.box-color {
+            background-color: var(--customblue); }
+    .mcontainer #body #left .grid {
+      bottom: 0%;
+      left: 0px;
+      position: absolute; }
+    .mcontainer #body #left .grid-right {
+      top: 0%;
+      right: -10%;
+      position: absolute; }
+  .mcontainer #body #right {
+    position: relative;
+    grid-area: Right;
+    background-color: #fff;
+    border-radius: 15px;
+    padding-top: 65px;
+    padding-bottom: 85px;
+    padding-left: 70px;
+    padding-right: 20px; }
+    .mcontainer #body #right h1 {
+      font-family: "MyriadProBold";
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 10px; }
+    .mcontainer #body #right .horizontal {
+      margin-bottom: 10px; }
+      .mcontainer #body #right .horizontal img {
+        width: 122px; }
+    .mcontainer #body #right p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      width: 500px; }
+    .mcontainer #body #right .users-icon {
+      position: absolute;
+      right: 42px;
+      top: 65px;
+      cursor: pointer; }
+      .mcontainer #body #right .users-icon img {
+        height: 30px; }
+    .mcontainer #body #right .tasks,
+    .mcontainer #body #right .upcoming {
+      margin-bottom: 1.3em; }
+      .mcontainer #body #right .tasks .add-tasks,
+      .mcontainer #body #right .upcoming .add-tasks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; }
+        .mcontainer #body #right .tasks .add-tasks h2,
+        .mcontainer #body #right .upcoming .add-tasks h2 {
+          font-family: "MyriadProBold";
+          font-size: 15px;
+          font-weight: 400; }
+        .mcontainer #body #right .tasks .add-tasks img,
+        .mcontainer #body #right .upcoming .add-tasks img {
+          cursor: pointer; }
+      .mcontainer #body #right .tasks input[type="text"], .mcontainer #body #right .tasks ul.tasks-list li form, .mcontainer #body #right .upcoming ul.tasks-list li .tasks form,
+      .mcontainer #body #right .upcoming input[type="text"],
+      .mcontainer #body #right .tasks ul.tasks-list li .upcoming form,
+      .mcontainer #body #right .upcoming ul.tasks-list li form {
+        border: unset;
+        border-bottom: 1px solid var(--customgrey);
+        width: 100%;
+        caret-color: var(--primary1); }
+      .mcontainer #body #right .tasks ul.tasks-list,
+      .mcontainer #body #right .upcoming ul.tasks-list {
+        margin-top: 15px; }
+        .mcontainer #body #right .tasks ul.tasks-list li,
+        .mcontainer #body #right .upcoming ul.tasks-list li {
+          display: flex;
+          flex-direction: column; }
+          .mcontainer #body #right .tasks ul.tasks-list li .info,
+          .mcontainer #body #right .upcoming ul.tasks-list li .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 0.3em;
+            border-radius: 0.3em 3em; }
+            .mcontainer #body #right .tasks ul.tasks-list li .info:hover,
+            .mcontainer #body #right .upcoming ul.tasks-list li .info:hover {
+              background-color: #70707010;
+              transition: all 400ms ease-in-out; }
+            .mcontainer #body #right .tasks ul.tasks-list li .info .left,
+            .mcontainer #body #right .upcoming ul.tasks-list li .info .left {
+              display: flex;
+              flex-direction: row;
+              align-items: center; }
+              .mcontainer #body #right .tasks ul.tasks-list li .info .left label,
+              .mcontainer #body #right .upcoming ul.tasks-list li .info .left label {
+                cursor: pointer;
+                margin-top: 0.3em;
+                padding-top: 0.4em; }
+                .mcontainer #body #right .tasks ul.tasks-list li .info .left label input,
+                .mcontainer #body #right .upcoming ul.tasks-list li .info .left label input {
+                  display: none; }
+                .mcontainer #body #right .tasks ul.tasks-list li .info .left label span,
+                .mcontainer #body #right .upcoming ul.tasks-list li .info .left label span {
+                  height: 20px;
+                  width: 20px;
+                  display: inline-block;
+                  position: relative;
+                  border-radius: 50px;
+                  border: 2px solid var(--customgreen1); }
+                .mcontainer #body #right .tasks ul.tasks-list li .info .left label [type=checkbox]:checked + span:before,
+                .mcontainer #body #right .upcoming ul.tasks-list li .info .left label [type=checkbox]:checked + span:before {
+                  content: '\2714';
+                  height: 20px;
+                  width: 20px;
+                  border-radius: 50px;
+                  border: 2px solid var(--customgreen1);
+                  background-color: var(--customgreen1);
+                  opacity: 1;
+                  font-size: 12px;
+                  top: 45%;
+                  color: #fff; }
+              .mcontainer #body #right .tasks ul.tasks-list li .info .left h4,
+              .mcontainer #body #right .upcoming ul.tasks-list li .info .left h4 {
+                margin-left: 15px;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 13px;
+                color: var(--primary2);
+                font-weight: 600; }
+            .mcontainer #body #right .tasks ul.tasks-list li .info .right,
+            .mcontainer #body #right .upcoming ul.tasks-list li .info .right {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between; }
+              .mcontainer #body #right .tasks ul.tasks-list li .info .right img,
+              .mcontainer #body #right .upcoming ul.tasks-list li .info .right img {
+                margin-right: 1em;
+                cursor: pointer; }
+              .mcontainer #body #right .tasks ul.tasks-list li .info .right button,
+              .mcontainer #body #right .upcoming ul.tasks-list li .info .right button {
+                padding: 5px 31px;
+                border-radius: 50px;
+                border: unset;
+                box-shadow: unset !important;
+                width: 120px;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 12px;
+                white-space: nowrap; }
+
+.approved {
+  background-color: #15D4A150;
+  color: #15D4A1; }
+
+.inprogress {
+  background-color: #0060FF20;
+  color: #0060FF; }
+
+.rejected {
+  background-color: #FF0E4620;
+  color: #FF0E46; }
